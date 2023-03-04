@@ -4,6 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />    
     <title>Highscores</title>
 
     <link rel="stylesheet" href="./assets/css/styles.css" />
@@ -11,13 +25,15 @@
 
   <body>
     <div class="wrapper">
-      <h1>Highscores</h1>
-      <ol id="highscores"></ol>
+      <h1 class="bg-info text-center">Highscores</h1>
+      <ol id="highscores" class="bg-warning"></ol>
 
       <a href="index.html"><button>Go Back</button></a>
       <button id="clear">Clear Highscores</button>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>  
     <script src="./assets/scripts/js/scores.js"></script>
   </body>
 </html>
