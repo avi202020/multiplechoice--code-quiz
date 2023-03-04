@@ -118,7 +118,6 @@ if (time <= 0 || currentQuestionIndex === questions.length) {
     } else {
     getQuestion()
     }
-    console.log(score)
 }
 }
 
@@ -134,7 +133,6 @@ submitBtn
 
    // Saving Name and Score//
 function saveInitials(){
-    console.log("saveInitials")
 let name = userEl.value.trim();
 if (name !== ""){
     let scores = JSON.parse(localStorage.getItem("User-Name-Score")) || [];
