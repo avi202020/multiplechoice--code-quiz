@@ -88,7 +88,7 @@ function questionClicked(event) {
 if (event.target.value !== questions[currentQuestionIndex].answer) {
     incorrectSound();   
     feedbackEl.textContent = 'Wrong Answer 10 Secs Deducted!'
-    feedbackEl.setAttribute('class', 'feedback')
+    feedbackEl.setAttribute('class', 'feedback text-danger')
     setTimeout(function() {
         feedbackEl.setAttribute("class", "feedback hide");
           }, 2000);    
@@ -99,7 +99,7 @@ if (event.target.value !== questions[currentQuestionIndex].answer) {
 else {
     correctSound();
     feedbackEl.textContent = 'Correct Answer!'
-    feedbackEl.setAttribute('class', 'feedback')
+    feedbackEl.setAttribute('class', 'feedback text-success')
     setTimeout(function() {
     feedbackEl.setAttribute("class", "feedback hide");
       }, 2000);   
